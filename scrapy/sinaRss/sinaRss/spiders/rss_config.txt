@@ -1,0 +1,3 @@
+{"url":"http://news.qq.com/newsgn/rss_newsgn.xml", "xpath":"//*[@id='Cnt-Main-Article-QQ']/p/text()","timestart":11, "timeend":19,"yearstart":0, "yearend":4,"monthstart":5, "monthend":7, "daystart":8, "dayend":10}
+{"url":"http://finance.qq.com/scroll/rss_scroll.xml", "xpath":"//*[@id='Cnt-Main-Article-QQ']/p/text()","timestart":11, "timeend":19,"yearstart":0, "yearend":4,"monthstart":5, "monthend":7, "daystart":8, "dayend":10}
+{"url":"http://www.people.com.cn/rss/politics.xml", "xpath":"//*[@id="p_content"]/p/text()","timestart":11, "timeend":19,"yearstart":0, "yearend":4,"monthstart":5, "monthend":7, "daystart":8, "dayend":10}

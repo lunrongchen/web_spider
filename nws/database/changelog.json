@@ -1,0 +1,445 @@
+{
+    "databaseChangeLog": [
+        {
+            "preConditions": [
+                {
+                    "runningAs": {
+                        "username": "bdccl",
+                        "password": "123456"
+                    }
+                }
+            ]
+        },
+        {
+            "changeSet": {
+                "id" : "1",
+                "author":"carwest",
+                "changes":[
+                    {
+                        "createTable":{
+                            "tableName" : "test",
+                            "columns" : [
+                            {
+                                "column" :{
+                                    "name":"id",
+                                    "type" : "int",
+                                    "autoIncrement" : true,
+                                    "constraints": {
+                                        "primaryKey" : true,
+                                        "nullable" : false
+                                    }
+                                },
+                            },
+                            {
+                                "column": {
+                                    "name" : "name",
+                                    "type" : "text"
+                                }
+                            }
+                            ]
+                        }
+                    }
+
+                ]
+            }
+        },
+        {
+            "changeSet": {
+                "id" : "2",
+                "author":"carwest",
+                "changes":[
+                    {
+                        "createTable":{
+                            "tableName" : "baidurss",
+                            "columns" : [
+                            {
+                                "column" :{
+                                    "name":"id",
+                                    "type" : "bigserial",
+                                    "constraints":{
+                                        "primaryKey":true,
+                                        "nullable" : false
+                                    }
+                                }
+                            },
+                            {
+                                "column": {
+                                    "name" : "url",
+                                    "type" : "text"
+                                }
+                            },
+                            {
+                                "column": {
+                                    "name" : "title",
+                                    "type" : "text"
+                                }
+                            },
+                            {
+                                "column": {
+                                    "name" : "pubdate",
+                                    "type": "date"
+                                }
+                            },
+                            {
+                                "column": {
+                                    "name" : "pubtime",
+                                    "type": "time"
+                                }
+                            },
+                            {
+                                "column": {
+                                    "name" : "pubtimestamp",
+                                    "type": "timestamp"
+                                }
+                            },
+                            {
+                                "column": {
+                                    "name" : "description",
+                                    "type": "text"
+                                }
+                            },
+                            {
+                                "column": {
+                                    "name" : "rssline",
+                                    "type": "text"
+                                }
+                            }
+                            ]
+                        }
+                    },
+                    {
+                        "createTable":{
+                            "tableName" : "page",
+                            "columns":[
+                            {
+                                "column":{
+                                    "name": "id",
+                                    "type": "bigint"
+                                }
+                            },
+                            {
+                                "column":{
+                                    "name" : "title",
+                                    "type" : "text"
+                                }
+                            },
+                            {
+                                "column": {
+                                    "name": "content",
+                                    "type": "text"
+                                }
+                            }
+                            ]
+                        }
+                    }, 
+
+                    {
+                        "createTable":{
+                            "tableName" : "rawpage",
+                            "columns" : [
+                            {
+                                "column" :{
+                                    "name":"id",
+                                    "type" : "bigserial",
+                                    "constraints":{
+                                        "primaryKey":true,
+                                        "nullable" : false
+                                    }
+                                }
+                            },
+                            {
+                                "column":{
+                                    "name" : "pubtime",
+                                    "type" : "timestamp"
+                                }
+                            },
+                            {
+                                "column": {
+                                    "name" : "url",
+                                    "type": "text"
+                                }
+                            },
+                            {
+                                "column": {
+                                    "name" : "raw",
+                                    "type": "text"
+                                }
+                            }
+                            ]
+                        }
+                    }
+
+                ]
+            }
+        },
+        {
+            "changeSet": {
+                "id" : "3",
+                "author":"carwest",
+                "changes":[
+                    {
+                        "addUniqueConstraint":{
+                            "columnNames": "url",
+                            "tableName" : "rawpage"
+                        }
+                    },
+                    {
+                        "addUniqueConstraint":{
+                            "columnNames": "url",
+                            "tableName": "baidurss"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "changeSet": {
+                "id" : "4",
+                "author" : "carwest",
+                "changes" : [
+                    {
+                        "addColumn" : {
+                            "columns":{
+                                "column" : {
+                                    "name": "title",
+                                    "type": "text"
+                                }
+                            },
+                            "tableName" : "rawpage"
+                        }
+                        
+                    },
+                    {
+                        "addColumn" :{
+                            "columns":{
+                                "column": {
+                                    "name":"url",
+                                    "type":"text"
+                                }
+                            },
+                            "tableName": "page"
+                        }
+                        
+                    }
+
+                ]
+            }
+        },
+        {
+            "changeSet" : {
+                "id" : "5",
+                "author" : "carwest",
+                "changes" : [
+                    {
+                        "addColumn" : {
+                            "columns" :{
+                                "column" : {
+                                    "name" : "pubtime",
+                                    "type" : "timestamp"
+                                }
+                            },
+                            "tableName" : "page"
+                        }
+                    },
+                    {
+                        "addForeignConstraint": {
+                            "baseColumnNames" : "id",
+                            "baseTableName" : "page",
+                            "constraintName" : "raw_idx",
+                            "referencedColumnNames" : "id",
+                            "referencedTableName" : "rawpage"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "changeSet" : {
+                "id" : "6",
+                "author" : "carwest",
+                "changes" : [
+                    {
+                        "addForeignConstraint": {
+                            "baseColumnNames" : "id",
+                            "baseTableName" : "page",
+                            "constraintName" : "raw_idx",
+                            "referencedColumnNames" : "id",
+                            "referencedTableName" : "rawpage"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "changeSet" :{
+                "id" : "7",
+                "author" : "carwest",
+                "changes" : [
+                    {
+                        "addForeignKeyConstraint" : {
+                            "baseColumnNames" : "id",
+                            "baseTableName" : "page",
+                            "constraintName" : "raw_idx",
+                            "referencedColumnNames" : "id",
+                            "referencedTableName" : "rawpage"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "changeSet" :{
+                "id": "8",
+                "author" : "carwest",
+                "changes" :[
+                {
+                    "createTable":{
+                        "tableName": "process",
+                        "columns":[
+                            {
+                                "column": {
+                                    "name" : "id",
+                                    "type" : "int",
+                                    "constraints": {
+                                        "primaryKey": true,
+                                        "nullable" : false
+                                    }
+                                }
+                            },
+                            {
+                                "column" : {
+                                    "name" : "lock",
+                                    "type" : "boolean",
+                                    "constraints": {
+                                        "nullable" : false
+                                    }
+                                }
+                            },
+                            {
+                                "column" : {
+                                    "name" : "cnt",
+                                    "type" : "bigint",
+                                    "constraints" : {
+                                        "nullable" : false
+                                    }
+                                }
+                            }
+                        ],
+
+                    }
+                }
+                ]
+            }
+        },
+        {
+            "changeSet" :{
+                "id": "9",
+                "author" : "carwest",
+                "changes" :[
+                {
+                    "createTable":{
+                        "tableName": "filterlock",
+                        "columns":[
+                            {
+                                "column": {
+                                    "name" : "id",
+                                    "type" : "int",
+                                    "constraints": {
+                                        "primaryKey": true,
+                                        "nullable" : false
+                                    }
+                                }
+                            },
+                            {
+                                "column" : {
+                                    "name" : "lock",
+                                    "type" : "boolean",
+                                    "constraints": {
+                                        "nullable" : false
+                                    }
+                                }
+                            },
+                            {
+                                "column" : {
+                                    "name" : "cnt",
+                                    "type" : "bigint",
+                                    "constraints" : {
+                                        "nullable" : false
+                                    }
+                                }
+                            }
+                        ],
+
+                    }
+                }
+                ]
+            }
+        },
+        {
+            "changeSet": {
+                "id" : "10",
+                "author": "carwest",
+                "changes" : [
+                {
+                    "createTable": {
+                        "tableName" : "labeled",
+                        "columns" : [
+                        {
+                            "column":{
+                                "name" : "id",
+                                "type" : "bigint",
+                            }
+                        },
+                        {
+                            "column":{
+                                "name" : "title",
+                                "type" : "text"
+                            }
+                        },
+                        {
+                            "column":{
+                                "name" : "content",
+                                "type" : "text"
+                            }
+                        },
+                        {
+                            "column":{
+                                "name" : "url",
+                                "type": "text"
+                            }
+                        },
+                        {
+                            "column":{
+                                "name" : "pubtime",
+                                "type" : "timestamp"
+                            }
+                        },
+                        {
+                            "column":{
+                                "name" : "event",
+                                "type" : "text" 
+                            }
+                        },
+                        {
+                            "column":{
+                                "name" : "location",
+                                "type" : "text"
+                            }
+                        }
+                        ]
+                    }
+                },
+                {
+                    "addForeignKeyConstraint" : {
+                        "baseColumnNames" : "id",
+                        "baseTableName" : "labeled",
+                        "constraintName" : "page_idx",
+                        "referencedColumnNames" : "id",
+                        "referencedTableName" : "rawpage"
+                    }
+                }
+                ]
+            }
+        }
+    ]
+}

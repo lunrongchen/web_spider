@@ -1,0 +1,6 @@
+{"url":"http://www.people.com.cn/rss/politics.xml", "xpath":"//*[@id='p_content']/p/text()","timestart":11, "timeend":19,"yearstart":0, "yearend":4,"monthstart":5, "monthend":7, "daystart":8, "dayend":10}
+{"url":"http://www.people.com.cn/rss/finance.xml", "xpath":"//*[@id='p_content']/p/text()","timestart":11, "timeend":19,"yearstart":0, "yearend":4,"monthstart":5, "monthend":7, "daystart":8, "dayend":10}
+{"url":"http://www.people.com.cn/rss/sports.xml", "xpath":"//*[@id='p_content']/p/text()","timestart":11, "timeend":19,"yearstart":0, "yearend":4,"monthstart":5, "monthend":7, "daystart":8, "dayend":10}
+{"url":"http://www.people.com.cn/rss/haixia.xml", "xpath":"//*[@id='p_content']/p/text()","timestart":11, "timeend":19,"yearstart":0, "yearend":4,"monthstart":5, "monthend":7, "daystart":8, "dayend":10}
+{"url":"http://www.people.com.cn/rss/edu.xml", "xpath":"//*[@id='p_content']/p/text()","timestart":11, "timeend":19,"yearstart":0, "yearend":4,"monthstart":5, "monthend":7, "daystart":8, "dayend":10}
+{"url":"http://www.people.com.cn/rss/opml.xml", "xpath":"//*[@id='p_content']/p/text()","timestart":11, "timeend":19,"yearstart":0, "yearend":4,"monthstart":5, "monthend":7, "daystart":8, "dayend":10}

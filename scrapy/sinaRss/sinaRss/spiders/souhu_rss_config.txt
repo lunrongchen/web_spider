@@ -1,0 +1,17 @@
+{"url":"http://rss.news.sohu.com/rss/focus.xml", "xpath":"//*[@id='sohu_content']/p/text()"}
+{"url":"http://rss.news.sohu.com/rss/guonei.xml", "xpath":"///*[@id='contentText']/p/text()"}
+{"url":"http://rss.news.sohu.com/rss/guoji.xml", "xpath":"//*[@id='contentText']/div[1]/p/text()"}
+{"url":"http://rss.news.sohu.com/rss/shehui.xml", "xpath":"//*[@id='contentText']/div[1]/p/text()"}
+{"url":"http://mil.sohu.com/rss/junshi.xml", "xpath":"//*[@id='contentText']/div[1]/p/text()"}
+{"url":"http://rss.news.sohu.com/rss/sports.xml", "xpath":"//*[@id='contentText']/div[1]/p/text()"}
+{"url":"http://rss.news.sohu.com/rss/business.xml", "xpath":"//*[@id='contentText']/div[1]/p/text()"}
+{"url":"http://rss.news.sohu.com/rss/it.xml", "xpath":"//*[@id='contentText']/div[1]/p/text()"}
+{"url":"http://rss.news.sohu.com/rss/learning.xml", "xpath":"//*[@id='contentText']/div[1]/p/text()"}
+{"url":"http://rss.news.sohu.com/rss/yule.xml", "xpath":"//*[@id='contentText']/div[1]/p/text()"}
+
+
+
+
+
+
+

@@ -1,0 +1,33 @@
+<?php
+
+header( "Access-Control-Allow-Origin: *");
+
+$config_file = fopen("/etc/yuqing", "r") or die("Unable to open file!");
+$password=fgets($config_file);
+fclose($config_file);
+
+$dbconn = pg_connect("host=localhost dbname=news2 user=bdccl password=$password") or die ( 'Could not connect: ' . pg_last_error());
+
+$query = 'select * from labeled limit 4';
+$result = pg_query($query) or die ('query failed: ' . pg_last_error());
+
+$ans_stack=array();
+
+$pre='';
+echo "[";
+while ( $ro=pg_fetch_object($result) )
+{
+	echo $pre;
+	$pre = ",";
+	echo json_encode($ro);
+}
+echo "]";
+
+
+pg_free_result($result);
+
+pg_close($dbconn);
+
+
+?>
+

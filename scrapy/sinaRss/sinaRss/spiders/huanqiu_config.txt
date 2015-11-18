@@ -1,0 +1,31 @@
+{"url":"http://rss.huanqiu.com/world/hot.xml", "xpath":"//*[@id='text']/p/descendant-or-self::*/text()"}
+
+{"url":"http://rss.huanqiu.com/history/world.xml",  "xpath":"//*[@id='text']/p/descendant-or-self::*/text()"}
+{"url":"http://rss.huanqiu.com/mil/world.xml",  "xpath":"//*[@id='text']/p/descendant-or-self::*/text()"}
+{"url":"http://rss.huanqiu.com/mil/paper.xml",  "xpath":"//*[@id='text']/p/descendant-or-self::*/text()"}
+{"url":"http://rss.huanqiu.com/tech/net.xml",  "xpath":"//*[@id='text']/p/descendant-or-self::*/text()"}
+{"url":"http://rss.huanqiu.com/tech/discovery.xml",  "xpath":"//*[@id='text']/p/descendant-or-self::*/text()"}
+{"url":"http://rss.huanqiu.com/tech/per.xml",  "xpath":"//*[@id='text']/p/descendant-or-self::*/text()"}
+{"url":"http://rss.huanqiu.com/finance/world.xml",  "xpath":"//*[@id='text']/p/descendant-or-self::*/text()"}
+{"url":"http://rss.huanqiu.com/society/Newsweek.xml",  "xpath":"//*[@id='text']/p/descendant-or-self::*/text()"}
+{"url":"http://rss.huanqiu.com/world/roll.xml",  "xpath":"//*[@id='text']/p/descendant-or-self::*/text()"}
+{"url":"http://rss.huanqiu.com/china/roll.xml",  "xpath":"//*[@id='text']/p/descendant-or-self::*/text()"}
+{"url":"http://rss.huanqiu.com/mil/china.xml",  "xpath":"//*[@id='text']/p/descendant-or-self::*/text()"}
+{"url":"http://rss.huanqiu.com/tech/news.xml",  "xpath":"//*[@id='text']/p/descendant-or-self::*/text()"}
+{"url":"http://rss.huanqiu.com/finance/roll.xml",  "xpath":"//*[@id='text']/p/descendant-or-self::*/text()"}
+{"url":"http://rss.huanqiu.com/taiwan/news.xml",  "xpath":"//*[@id='text']/p/descendant-or-self::*/text()"}
+{"url":"http://rss.huanqiu.com/ent/yuletoutiao.xml",  "xpath":"//*[@id='text']/p/descendant-or-self::*/text()"}
+{"url":"http://rss.huanqiu.com/society/focus.xml",  "xpath":"//*[@id='text']/p/descendant-or-self::*/text()"}
+{"url":"http://rss.huanqiu.com/society/law.xml",  "xpath":"//*[@id='text']/p/descendant-or-self::*/text()"}
+{"url":"http://rss.huanqiu.com/tech/digi.xml",  "xpath":"//*[@id='text']/p/descendant-or-self::*/text()"}
+{"url":"http://rss.huanqiu.com/tech/elec.xml",  "xpath":"//*[@id='text']/p/descendant-or-self::*/text()"}
+{"url":"http://rss.huanqiu.com/finance/china.xml",  "xpath":"//*[@id='text']/p/descendant-or-self::*/text()"}
+{"url":"http://rss.huanqiu.com/finance/view.xml",  "xpath":"//*[@id='text']/p/descendant-or-self::*/text()"}
+{"url":"http://rss.huanqiu.com/oversea/political.xml",  "xpath":"//*[@id='text']/p/descendant-or-self::*/text()"}
+
+{"url":"",  "xpath":"//*[@id='text']/p/descendant-or-self::*/text()"}
+{"url":"",  "xpath":"//*[@id='text']/p/descendant-or-self::*/text()"}
+{"url":"",  "xpath":"//*[@id='text']/p/descendant-or-self::*/text()"}
+{"url":"",  "xpath":"//*[@id='text']/p/descendant-or-self::*/text()"}
+
+

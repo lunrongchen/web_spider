@@ -1,0 +1,14 @@
+{"url":"http://news.ifeng.com/rss/index.xml"}
+{"url":"http://news.ifeng.com/mil/rss/index.xml"}
+{"url":"http://news.ifeng.com/history/rss/index.xml"}
+{"url":"http://news.ifeng.com/rss/mainland.xml"}
+{"url":"http://news.ifeng.com/rss/taiwan.xml"}
+{"url":"http://news.ifeng.com/rss/world.xml"}
+{"url":"http://news.ifeng.com/rss/society.xml"}
+{"url":"http://news.ifeng.com/rss/photo.xml"}
+{"url":"http://news.ifeng.com/opinion/rss/index.xml"}
+{"url":"http://news.ifeng.com/sports/rss/index.xml"}
+
+
+
+

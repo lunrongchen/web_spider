@@ -1,0 +1,8 @@
+{"url":"http://rss.sina.com.cn/news/china/focus15.xml", "xpath":"//*[@id='artibody']/p/text()"}
+{"url":"http://rss.sina.com.cn/news/world/focus15.xml", "xpath":"//*[@id='artibody']/p/text()"}
+{"url":"http://rss.sina.com.cn/news/society/focus15.xml", "xpath":"//*[@id='artibody']/p/text()"}
+{"url":"http://rss.sina.com.cn/news/society/law15.xml", "xpath":"//*[@id='artibody']/p/text()"}
+{"url":"http://rss.sina.com.cn/news/china/hktaiwan15.xml", "xpath":"//*[@id='artibody']/p/text()"}
+{"url":"http://rss.sina.com.cn/news/society/misc15.xml", "xpath":"//*[@id='artibody']/p/text()"}
+{"url":"http://rss.sina.com.cn/news/society/feeling15.xml", "xpath":"//*[@id='artibody']/p/text()"}
+{"url":"http://rss.sina.com.cn/news/society/wonder15.xml", "xpath":"//*[@id='artibody']/p/text()"}
